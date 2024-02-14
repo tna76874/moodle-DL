@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-    exec moodle-dl --path /files
+    /usr/local/bin/moodle-dl --path /files
 else
-    exec moodle-dl --path /files "$@"
+    /usr/local/bin/moodle-dl --path /files "$@"
 fi
