@@ -29,7 +29,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-          cd build
+          git submodule update --init --recursive
           COMMIT_HASH=$(git rev-parse HEAD)
           CURRENT_DATE=$(date +'%Y%m%d')
           CURRENT_DATE_WITH_HOUR=$(date +'%Y%m%d%H')
